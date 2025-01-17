@@ -1,0 +1,161 @@
+@font-face {
+    font-family: fontstyle;
+    src: url(Comfortaa-Bold.ttf);
+  }
+  *{
+    font-family: fontstyle;
+  }
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    background-color: rgba(207, 37, 37, 0.9);
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+  }
+  
+  header::after {  
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url(background.jpg);
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+  }
+  
+  .search-form {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    color: #333;
+    border-radius: 25px;
+    padding: 10px 20px;
+  }
+  
+  input[type="text"] {
+    border: none;
+    outline: none;
+    font-size: 18px;
+    width: 200px;
+    padding-left: 20px;
+  }
+  
+  button[type="submit"] {
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to right,#f3ad6a,#ee4c5a);
+    color: #fff;
+    font-size: 18px;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+  }
+  button[type="submit"]:hover{
+    background-image: linear-gradient(to right,#43cbff,#9708cc);
+  }
+
+  #headd a:hover{
+    font-size: 25px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav li a {
+    color: black;
+    font-size: 18px;
+    text-decoration: none;
+    padding: 20px;
+    
+  }
+  
+  .sign-up-btn {
+    background-color: #fff;
+    color: #333;
+    border-radius: 25px;
+  }
+  
+  .sign-up-btn:hover {
+    background-image: linear-gradient(to right,#43cbff,#9708cc);
+    color: #fff;
+  }
+#headd{
+    font-size: 24px;
+}
+.navv a:hover{  
+  color: white;
+  font-size: 19px;
+}
+  
+  
+  .book-preview {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 600px;
+      background-color: #f2f2f2;
+      padding: 40px;
+      margin: 110px;
+      text-align: center;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .book-cover {
+      width: 40%;
+      text-align: center;
+    }   
+    
+    .covver {
+      width: 80%;
+      height: 80%;
+      object-fit: cover;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    }
+    
+    .book-details {
+      width: 60%;
+      padding: 40px;
+      text-align: left;
+    }
+    
+    h1 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+    
+    p {
+      font-size: 18px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+
+    #rating{
+      height: 40px;
+      width: 200px;
+    }
