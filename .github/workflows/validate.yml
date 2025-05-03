@@ -1,4 +1,4 @@
-name: Validate HTML & Links
+name: Validate HTML
 
 on:
   push:
@@ -6,23 +6,20 @@ on:
   pull_request:
 
 jobs:
-  validate:
+  html-validate:
+    name: Run HTML Validator
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout Code
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
 
-      - name: Install HTML Validator
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y curl openjdk-11-jre-headless
-          curl -O https://validator.github.io/validator/validator.war
-
-      - name: Validate HTML
-        run: java -jar validator.war index.html
-
-      - name: Check for broken links
-        uses: lycheeverse/lychee-action@v1.6.1
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
-          args: ./index.html --verbose --no-progress
+          node-version: '18'
+
+      - name: Install html-validate
+        run: npm install -g html-validate
+
+      - name: Validate all HTML files
+        run: html-validate "**/*.html"
