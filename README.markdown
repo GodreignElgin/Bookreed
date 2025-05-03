@@ -36,3 +36,6 @@ Open `index.html` to view the book reading interface. Explore the different sect
 - Add interactive features such as book selection and reading functionality.
 - Implement a search function to find books by title, author, or genre.
 - Enhance the design with more CSS styling or JavaScript animations.
+
+![CI Status](https://github.com/yourusername/Bookreed/actions/workflows/validate.yml/badge.svg)
+
