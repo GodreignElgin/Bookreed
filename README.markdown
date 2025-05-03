@@ -23,38 +23,16 @@ Open `index.html` to view the book reading interface. Explore the different sect
 ## Screenshots
 
 - **Homepage:**
-  ![Homepage Screenshot](path/to/homepage-screenshot.png)
+  ![Homepage Screenshot](./asset_images/1.png)
 
-- **Book Details:**
-  ![Book Details Screenshot](path/to/book-details-screenshot.png)
+- **Book List:**
+  ![Book List Screenshot](./asset_images/2.png)
 
-**Note:** Replace `path/to/homepage-screenshot.png` and `path/to/book-details-screenshot.png` with the actual paths to your screenshot images.
-
-## Hosting on GitHub Pages
-
-To host this project on GitHub Pages:
-
-1. Ensure the repository is public.
-2. Go to the repository settings.
-3. Scroll down to the "GitHub Pages" section.
-4. Select the branch you want to use (e.g., `main` or `master`).
-5. Choose the root folder.
-6. Save the settings.
-7. Your site will be available at `https://<username>.github.io/Bookreed/`.
-
-## License
-
-This project does not currently have a license. Consider adding one to specify how others can use or contribute to the project.
+- **Sign Up:**
+  ![Sign up page screenshot](./asset_images/3.png)
 
 ## Future Improvements
 
 - Add interactive features such as book selection and reading functionality.
 - Implement a search function to find books by title, author, or genre.
 - Enhance the design with more CSS styling or JavaScript animations.
-
-## Credits
-
-- [Your Name] - Creator
-- [Any inspirations or resources used]
-
-**Note:** Replace `[Your Name]` with your actual name or GitHub username.
