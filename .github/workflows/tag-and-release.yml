@@ -13,5 +13,5 @@ jobs:
       - uses: actions/checkout@v3
       - uses: anothrNick/github-tag-action@v1
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.GH_PAT }}  # Use PAT instead of default
           WITH_V: true
