@@ -1,0 +1,28 @@
+name: Validate HTML & Links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Install HTML Validator
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y curl openjdk-11-jre-headless
+          curl -O https://validator.github.io/validator/validator.war
+
+      - name: Validate HTML
+        run: java -jar validator.war index.html
+
+      - name: Check for broken links
+        uses: lycheeverse/lychee-action@v1.6.1
+        with:
+          args: ./index.html --verbose --no-progress
